@@ -38,7 +38,8 @@ minecraft {
         client {
 		
             workingDirectory project.file('run')
-
+			taskName "${mod_name} Client"
+			
             mods {
                 enchantmentdesc {
                     source sourceSets.main
@@ -47,7 +48,9 @@ minecraft {
         }
 
         server {
+		
             workingDirectory project.file('run')
+			taskName "${mod_name} Server"
 
             mods {
                 enchantmentdesc {
